@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.primeiro_app.fragments.ListaArtistasFragment
 import com.example.primeiro_app.fragments.ListaMusicasFragment
 import com.example.primeiro_app.fragments.PerfilFragment
 
@@ -54,9 +55,14 @@ class MenuFragmentos : AppCompatActivity() {
                 .replace(R.id.fragmentContainerView3, fragmento)
                 .addToBackStack(null)
                 .commit()
+        }
 
+        findViewById<Button>(R.id.btnArtistas).setOnClickListener {
 
-
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainerView3, ListaArtistasFragment())
+                .addToBackStack(null)
+                .commit()
         }
 
 

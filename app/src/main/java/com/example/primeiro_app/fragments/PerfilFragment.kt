@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import com.example.primeiro_app.R
 
@@ -13,7 +14,6 @@ class PerfilFragment : Fragment() {
 
     private var txtNome : String? = null
     private lateinit var txtPerfil : TextView
-    private var image : Int? = null
     private lateinit var btnLogout : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,6 +33,10 @@ class PerfilFragment : Fragment() {
         btnLogout = view.findViewById<Button>(R.id.btnLogout)
         txtPerfil = view.findViewById(R.id.txtPerfil)
         txtPerfil.text = txtNome
+        val imageViewPerfil = view.findViewById<ImageView>(R.id.imageView4)
+
+
+        imageViewPerfil.setImageResource(R.drawable.images)
 
         btnLogout.setOnClickListener{
             activity?.finish()
