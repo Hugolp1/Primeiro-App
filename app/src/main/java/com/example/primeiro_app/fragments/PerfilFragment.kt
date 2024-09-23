@@ -1,4 +1,4 @@
-package com.example.primeiro_app.Fragments
+package com.example.primeiro_app.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -35,7 +35,7 @@ class PerfilFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_perfil, container, false)
+        return inflater.inflate(R.layout.fragment_lista_musicas, container, false)
     }
 
     companion object {
