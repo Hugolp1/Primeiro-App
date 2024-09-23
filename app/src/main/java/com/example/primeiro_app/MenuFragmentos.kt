@@ -21,7 +21,7 @@ class MenuFragmentos : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnMusicas).setOnClickListener {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, ListaMusicasFragment())
+                .replace(R.id.fragmentContainerView3, ListaMusicasFragment())
                 .addToBackStack(null) // Adiciona à pilha de volta
                 .commit()
         }

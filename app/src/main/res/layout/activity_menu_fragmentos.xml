@@ -15,9 +15,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/guideline"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout="@layout/fragment_lista_musicas" />
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -69,13 +67,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/btnMusicas"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="206dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
