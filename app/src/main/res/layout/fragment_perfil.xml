@@ -32,7 +32,7 @@
         tools:src="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLogout"
         android:layout_width="156dp"
         android:layout_height="48dp"
         android:backgroundTint="#FFFFFF"
