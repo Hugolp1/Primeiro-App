@@ -94,6 +94,7 @@
         app:layout_constraintVertical_bias="0.5">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtInputArtista"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nome do Artista" />

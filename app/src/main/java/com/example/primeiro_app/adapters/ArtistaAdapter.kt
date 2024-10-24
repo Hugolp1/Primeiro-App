@@ -23,11 +23,5 @@ class ArtistaAdapter(private val listaArtistas: List<Artista>) :
         return ArtistaViewHolder(itemView)
     }
 
-    override fun onBindViewHolder(holder: ArtistaViewHolder, position: Int) {
-        val artista = listaArtistas[position]
-        holder.nomeArtista.text = artista.nome
-        holder.imagemArtista.setImageResource(artista.imagemResId)
-    }
-
     override fun getItemCount() = listaArtistas.size
 }
